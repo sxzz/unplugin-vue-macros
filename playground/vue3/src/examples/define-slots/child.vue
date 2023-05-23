@@ -13,6 +13,8 @@ defineSlots<Slots & { title: never }>()
 <template>
   <div>defineSlots</div>
   <div>
+    <!-- TODO: override defineSlots from Volar -->
+    <!-- @vue-expected-error -->
     <slot name="title" foo="bar">title</slot>
   </div>
 </template>

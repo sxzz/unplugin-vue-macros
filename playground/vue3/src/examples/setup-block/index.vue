@@ -5,5 +5,6 @@ const msg = ref('Hello World')
 
 <template>
   <div>setupBlock</div>
+  <!-- @vue-expected-error -->
   {{ msg }}
 </template>

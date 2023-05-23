@@ -26,6 +26,6 @@
     "unplugin-vue-macros": "workspace:*",
     "vite": "^4.3.8",
     "vite-plugin-inspect": "^0.7.28",
-    "vue-tsc": "1.6.5"
+    "vue-tsc": "1.7.8"
   }
 }
