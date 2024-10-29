@@ -13,6 +13,7 @@
   "exclude": [
     "packages/devtools/src/client",
     "**/tsup.config.ts",
+    "**/tsdown.config.ts",
     "**/vite.config.mts",
     "**/dist",
     "**/tests",
