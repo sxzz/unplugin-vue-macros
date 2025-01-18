@@ -11,7 +11,7 @@ We assume you are already familiar with the basic usages of Vue before you conti
 
 ## Requirements
 
-- Node.js `>= v16.14.0`.
+- Node.js `>= v18.12.0`.
 - Vue `>= v2.7` or Vue `>= v3.0`.
   - Some features need Vue `>= v3.2.25`.
 - VSCode extension [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) and `vue-tsc` are <code>v{{ version }}</code>

@@ -74,6 +74,6 @@
     "vite-plugin-inspect": "^10.1.0"
   },
   "engines": {
-    "node": ">=16.14.0"
+    "node": ">=18.12.0"
   }
 }

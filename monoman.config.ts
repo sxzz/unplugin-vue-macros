@@ -79,7 +79,7 @@ export default defineConfig([
         directory: `packages/${pkgName}`,
       }
       // data.author = '三咲智子 <sxzz@sxzz.moe>'
-      data.engines = { node: '>=16.14.0' }
+      data.engines = { node: '>=18.12.0' }
 
       data.files = ['dist']
       if (hasRootDts) data.files.push('*.d.ts')

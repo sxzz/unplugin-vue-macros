@@ -10,7 +10,7 @@ Vue Macros 是一个实现 Vue 非官方提案和想法的库，探索并扩展�
 
 ## 要求
 
-- Node.js `>= v16.14.0`
+- Node.js `>= v18.12.0`
 - Vue `>= v2.7` 或 Vue `>= v3.0`
   - 某些功能需要 Vue `>= v3.2.25`
 - VSCode 扩展 [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 和 `vue-tsc` 为 <code>v{{ version }}</code>
