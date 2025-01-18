@@ -6,7 +6,7 @@ export default sxzz([
   vueMacros,
   {
     name: 'global-ignores',
-    ignores: ['playground/vue2/src', 'playground/nuxt', 'playground/astro'],
+    ignores: ['playground/nuxt', 'playground/astro'],
   },
   {
     name: 'global-rules',

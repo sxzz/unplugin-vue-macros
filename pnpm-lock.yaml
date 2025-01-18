@@ -76,8 +76,8 @@ catalogs:
       specifier: ^65.4.3
       version: 65.4.3
     unplugin:
-      specifier: ^1.16.1
-      version: 1.16.1
+      specifier: ^2.1.2
+      version: 2.1.2
     unplugin-vue:
       specifier: ^5.2.1
       version: 5.2.1
@@ -212,7 +212,7 @@ importers:
         version: 65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
       unplugin-isolated-decl:
         specifier: ^0.10.5
         version: 0.10.5(oxc-transform@0.48.1)(rollup@4.32.0)(typescript@5.7.3)
@@ -240,9 +240,6 @@ importers:
       vue-tsc:
         specifier: 'catalog:'
         version: 2.1.10(typescript@5.7.3)
-      vue2:
-        specifier: npm:vue@^2.7.16
-        version: vue@2.7.16
       webpack:
         specifier: ^5.97.1
         version: 5.97.1(esbuild@0.24.2)
@@ -334,7 +331,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
 
   packages/boolean-prop:
     dependencies:
@@ -356,7 +353,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
 
   packages/common:
     dependencies:
@@ -487,7 +484,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -503,7 +500,7 @@ importers:
         version: 0.6.2
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       '@vueuse/core':
         specifier: 'catalog:'
@@ -522,7 +519,7 @@ importers:
         version: 0.6.2
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -538,7 +535,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -551,7 +548,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       '@vue-macros/reactivity-transform':
         specifier: workspace:*
@@ -567,7 +564,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -580,7 +577,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -593,7 +590,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -609,7 +606,7 @@ importers:
         version: 3.5.13
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       '@stylexjs/stylex':
         specifier: 'catalog:'
@@ -659,7 +656,7 @@ importers:
         version: 3.5.13
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -672,7 +669,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -685,7 +682,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -698,7 +695,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
 
   packages/jsx-directive:
     dependencies:
@@ -710,7 +707,7 @@ importers:
         version: 3.5.13
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
       vue:
         specifier: 'catalog:'
         version: 3.5.13(typescript@5.7.3)
@@ -806,10 +803,15 @@ importers:
         version: link:../volar
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
       unplugin-combine:
+<<<<<<< HEAD
         specifier: ^1.2.0
         version: 1.2.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(esbuild@0.24.2)(rolldown@1.0.0-beta.3(@babel/runtime@7.26.7)(typescript@5.7.3))(rollup@4.32.0)(unplugin@1.16.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.97.1(esbuild@0.24.2))
+=======
+        specifier: ^1.1.1
+        version: 1.1.1(@rspack/core@1.1.8(@swc/helpers@0.5.15))(esbuild@0.24.2)(rolldown@1.0.0-beta.1(@babel/runtime@7.26.0))(rollup@4.30.1)(unplugin@2.1.2)(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.97.1(esbuild@0.24.2))
+>>>>>>> ae808c93 (feat!: drop vue 2)
       unplugin-vue-define-options:
         specifier: workspace:*
         version: link:../define-options
@@ -828,7 +830,7 @@ importers:
         version: 3.5.13
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -875,7 +877,7 @@ importers:
         version: 0.30.17
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
 
   packages/script-lang:
     dependencies:
@@ -884,7 +886,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -900,7 +902,7 @@ importers:
         version: 3.5.13
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
 
   packages/setup-component:
     dependencies:
@@ -909,7 +911,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -922,7 +924,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
     devDependencies:
       vue:
         specifier: 'catalog:'
@@ -948,7 +950,7 @@ importers:
         version: link:../common
       unplugin:
         specifier: 'catalog:'
-        version: 1.16.1
+        version: 2.1.2
 
   packages/short-vmodel:
     dependencies:
@@ -976,10 +978,14 @@ importers:
         version: 0.4.0(esbuild@0.24.2)(rolldown@1.0.0-beta.3(@babel/runtime@7.26.7)(typescript@5.7.3))(rollup@4.32.0)(vitest@3.0.4)
       '@vitejs/plugin-vue-jsx':
         specifier: ^4.1.1
+<<<<<<< HEAD
         version: 4.1.1(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       '@vitejs/plugin-vue2':
         specifier: ^2.3.3
         version: 2.3.3(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
+=======
+        version: 4.1.1(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
+>>>>>>> ae808c93 (feat!: drop vue 2)
       rollup:
         specifier: 'catalog:'
         version: 4.32.0
@@ -1055,6 +1061,7 @@ importers:
         specifier: 'catalog:'
         version: 3.5.13(typescript@5.7.3)
 
+<<<<<<< HEAD
   playground/vue2:
     dependencies:
       '@vueuse/core':
@@ -1122,6 +1129,8 @@ importers:
         specifier: 'catalog:'
         version: 2.1.10(typescript@5.7.3)
 
+=======
+>>>>>>> ae808c93 (feat!: drop vue 2)
   playground/vue3:
     dependencies:
       '@vueuse/core':
@@ -2988,6 +2997,7 @@ packages:
       vite: ^5.0.0 || ^6.0.0
       vue: ^3.0.0
 
+<<<<<<< HEAD
   '@vitejs/plugin-vue2-jsx@1.1.1':
     resolution: {integrity: sha512-r6BjWP2aVg4/uXdjf+wMwLuk0LQEUbPTC9UcRpWMhWsfVl9n/8RhiG6pQPO9g+oab/g3fHoZ2bmJJbKuraqCsw==}
     engines: {node: '>=14.18.0'}
@@ -3002,6 +3012,8 @@ packages:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
       vue: ^2.7.0-0
 
+=======
+>>>>>>> ae808c93 (feat!: drop vue 2)
   '@vitejs/plugin-vue@5.2.1':
     resolution: {integrity: sha512-cxh314tzaWwOLqVes2gnnCtvBDcM1UMdn+iFR+UjAn411dPT3tOmqrJjbMd7koZpMAmBM/GqeV4n9ge7JSiJJQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -3061,9 +3073,6 @@ packages:
   '@volar/typescript@2.4.11':
     resolution: {integrity: sha512-2DT+Tdh88Spp5PyPbqhyoYavYCPDsqbHLFwcUI9K1NlY1YgUJvujGdrqUp0zWxnW7KWNTr3xSpMuv2WnaTKDAw==}
 
-  '@vue/babel-helper-vue-jsx-merge-props@1.4.0':
-    resolution: {integrity: sha512-JkqXfCkUDp4PIlFdDQ0TdXoIejMtTHP67/pvxlgeY+u5k3LEdKuWZ3LK6xkxo52uDoABIVyRwqVkfLQJhk7VBA==}
-
   '@vue/babel-helper-vue-transform-on@1.2.5':
     resolution: {integrity: sha512-lOz4t39ZdmU4DJAa2hwPYmKc8EsuGa2U0L9KaZaOJUt0UwQNjNA3AZTq6uEivhOKhhG1Wvy96SvYBoFmCg3uuw==}
 
@@ -3080,58 +3089,11 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@vue/babel-plugin-transform-vue-jsx@1.4.0':
-    resolution: {integrity: sha512-Fmastxw4MMx0vlgLS4XBX0XiBbUFzoMGeVXuMV08wyOfXdikAFqBTuYPR0tlk+XskL19EzHc39SgjrPGY23JnA==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@vue/babel-preset-jsx@1.4.0':
-    resolution: {integrity: sha512-QmfRpssBOPZWL5xw7fOuHNifCQcNQC1PrOo/4fu6xlhlKJJKSA3HqX92Nvgyx8fqHZTUGMPHmFA+IDqwXlqkSA==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-      vue: '*'
-    peerDependenciesMeta:
-      vue:
-        optional: true
-
-  '@vue/babel-sugar-composition-api-inject-h@1.4.0':
-    resolution: {integrity: sha512-VQq6zEddJHctnG4w3TfmlVp5FzDavUSut/DwR0xVoe/mJKXyMcsIibL42wPntozITEoY90aBV0/1d2KjxHU52g==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@vue/babel-sugar-composition-api-render-instance@1.4.0':
-    resolution: {integrity: sha512-6ZDAzcxvy7VcnCjNdHJ59mwK02ZFuP5CnucloidqlZwVQv5CQLijc3lGpR7MD3TWFi78J7+a8J56YxbCtHgT9Q==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@vue/babel-sugar-functional-vue@1.4.0':
-    resolution: {integrity: sha512-lTEB4WUFNzYt2In6JsoF9sAYVTo84wC4e+PoZWSgM6FUtqRJz7wMylaEhSRgG71YF+wfLD6cc9nqVeXN2rwBvw==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@vue/babel-sugar-inject-h@1.4.0':
-    resolution: {integrity: sha512-muwWrPKli77uO2fFM7eA3G1lAGnERuSz2NgAxuOLzrsTlQl8W4G+wwbM4nB6iewlKbwKRae3nL03UaF5ffAPMA==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@vue/babel-sugar-v-model@1.4.0':
-    resolution: {integrity: sha512-0t4HGgXb7WHYLBciZzN5s0Hzqan4Ue+p/3FdQdcaHAb7s5D9WZFGoSxEZHrR1TFVZlAPu1bejTKGeAzaaG3NCQ==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@vue/babel-sugar-v-on@1.4.0':
-    resolution: {integrity: sha512-m+zud4wKLzSKgQrWwhqRObWzmTuyzl6vOP7024lrpeJM4x2UhQtRDLgYjXAw9xBXjCwS0pP9kXjg91F9ZNo9JA==}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
   '@vue/compiler-core@3.5.13':
     resolution: {integrity: sha512-oOdAkwqUfW1WqpwSYJce06wvt6HljgY3fGeM9NcVA1HaYOij3mZG9Rkysn0OHuyUAGMbEbARIpsG+LPVlBJ5/Q==}
 
   '@vue/compiler-dom@3.5.13':
     resolution: {integrity: sha512-ZOJ46sMOKUjO3e94wPdCzQ6P1Lx/vhp2RSvfaab88Ajexs0AHeV0uasYhi99WPaogmBlRHNRuly8xV75cNTMDA==}
-
-  '@vue/compiler-sfc@2.7.16':
-    resolution: {integrity: sha512-KWhJ9k5nXuNtygPU7+t1rX6baZeqOYLEforUPjgNDBnLicfHCoi48H87Q8XyLZOrNNsmhuwKqtpDQWjEFe6Ekg==}
 
   '@vue/compiler-sfc@3.5.13':
     resolution: {integrity: sha512-6VdaljMpD82w6c2749Zhf5T9u5uLBWKnVue6XWxprDobftnletJ8+oel7sexFfM3qIxNmVE7LSFGTpv6obNyaQ==}
@@ -3486,10 +3448,6 @@ packages:
 
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
-    engines: {node: '>=6'}
-
-  camelcase@5.3.1:
-    resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
 
   camelcase@8.0.0:
@@ -4442,10 +4400,6 @@ packages:
   html-escaper@3.0.3:
     resolution: {integrity: sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==}
 
-  html-tags@2.0.0:
-    resolution: {integrity: sha512-+Il6N8cCo2wB/Vd3gqy/8TZhTD3QvcVeQLCnZiGkGCH3JP28IgGAY41giccp2W4R3jfyJPAP318FQTa1yU7K7g==}
-    engines: {node: '>=4'}
-
   html-tags@3.3.1:
     resolution: {integrity: sha512-ztqyC3kLto0e9WbNp0aeP+M3kTt+nbaIveGmUxAtZa+8iFgKLUOD4YKM5j+f3QD89bra7UeumolZHKuOXnTmeQ==}
     engines: {node: '>=8'}
@@ -4794,9 +4748,6 @@ packages:
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
-
-  lodash.kebabcase@4.1.1:
-    resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -6496,10 +6447,6 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
-
-  vue@2.7.16:
-    resolution: {integrity: sha512-4gCtFXaAA3zYZdTp5s4Hl2sozuySsgz4jy1EnpBHNfpMa9dK1ZCG7viqBPCwXtmgc8nHqUsAu3G4gtmXkkY3Sw==}
-    deprecated: Vue 2 has reached EOL and is no longer actively maintained. See https://v2.vuejs.org/eol/ for more details.
 
   vue@3.5.13:
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
@@ -8756,6 +8703,7 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
+<<<<<<< HEAD
   '@unocss/astro@65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@2.7.16)':
     dependencies:
       '@unocss/core': 65.4.3
@@ -8769,6 +8717,9 @@ snapshots:
       - vue
 
   '@unocss/astro@65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))':
+=======
+  '@unocss/astro@65.4.2(rollup@4.30.1)(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))':
+>>>>>>> ae808c93 (feat!: drop vue 2)
     dependencies:
       '@unocss/core': 65.4.3
       '@unocss/reset': 65.4.3
@@ -8825,6 +8776,7 @@ snapshots:
     dependencies:
       '@unocss/core': 65.4.3
 
+<<<<<<< HEAD
   '@unocss/inspector@65.4.3(vue@2.7.16)':
     dependencies:
       '@unocss/core': 65.4.3
@@ -8837,6 +8789,9 @@ snapshots:
       - vue
 
   '@unocss/inspector@65.4.3(vue@3.5.13(typescript@5.7.3))':
+=======
+  '@unocss/inspector@65.4.2(vue@3.5.13(typescript@5.7.3))':
+>>>>>>> ae808c93 (feat!: drop vue 2)
     dependencies:
       '@unocss/core': 65.4.3
       '@unocss/rule-utils': 65.4.3
@@ -8928,6 +8883,7 @@ snapshots:
     dependencies:
       '@unocss/core': 65.4.3
 
+<<<<<<< HEAD
   '@unocss/vite@65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@2.7.16)':
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -8945,6 +8901,9 @@ snapshots:
       - vue
 
   '@unocss/vite@65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))':
+=======
+  '@unocss/vite@65.4.2(rollup@4.30.1)(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))':
+>>>>>>> ae808c93 (feat!: drop vue 2)
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.4(rollup@4.32.0)
@@ -8974,6 +8933,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< HEAD
   '@vitejs/plugin-vue2-jsx@1.1.1(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@2.7.16)':
     dependencies:
       '@babel/core': 7.26.7
@@ -8998,6 +8958,9 @@ snapshots:
       vue: 3.5.13(typescript@5.7.3)
 
   '@vitejs/plugin-vue@5.2.1(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))':
+=======
+  '@vitejs/plugin-vue@5.2.1(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))':
+>>>>>>> ae808c93 (feat!: drop vue 2)
     dependencies:
       vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0)
       vue: 3.5.13(typescript@5.7.3)
@@ -9083,8 +9046,6 @@ snapshots:
       path-browserify: 1.0.1
       vscode-uri: 3.0.8
 
-  '@vue/babel-helper-vue-jsx-merge-props@1.4.0': {}
-
   '@vue/babel-helper-vue-transform-on@1.2.5': {}
 
   '@vue/babel-plugin-jsx@1.2.5(@babel/core@7.26.7)':
@@ -9115,6 +9076,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+<<<<<<< HEAD
   '@vue/babel-plugin-transform-vue-jsx@1.4.0(@babel/core@7.26.7)':
     dependencies:
       '@babel/core': 7.26.7
@@ -9184,6 +9146,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+=======
+>>>>>>> ae808c93 (feat!: drop vue 2)
   '@vue/compiler-core@3.5.13':
     dependencies:
       '@babel/parser': 7.26.7
@@ -9197,6 +9161,7 @@ snapshots:
       '@vue/compiler-core': 3.5.13
       '@vue/shared': 3.5.13
 
+<<<<<<< HEAD
   '@vue/compiler-sfc@2.7.16':
     dependencies:
       '@babel/parser': 7.26.7
@@ -9205,6 +9170,8 @@ snapshots:
     optionalDependencies:
       prettier: 2.8.8
 
+=======
+>>>>>>> ae808c93 (feat!: drop vue 2)
   '@vue/compiler-sfc@3.5.13':
     dependencies:
       '@babel/parser': 7.26.7
@@ -9712,8 +9679,6 @@ snapshots:
   cac@6.7.14: {}
 
   callsites@3.1.0: {}
-
-  camelcase@5.3.1: {}
 
   camelcase@8.0.0: {}
 
@@ -10830,8 +10795,6 @@ snapshots:
 
   html-escaper@3.0.3: {}
 
-  html-tags@2.0.0: {}
-
   html-tags@3.3.1: {}
 
   html-void-elements@3.0.0: {}
@@ -11129,8 +11092,6 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
-
-  lodash.kebabcase@4.1.1: {}
 
   lodash.merge@4.6.2: {}
 
@@ -12779,6 +12740,7 @@ snapshots:
 
   universalify@2.0.1: {}
 
+<<<<<<< HEAD
   unocss@65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@2.7.16):
     dependencies:
       '@unocss/astro': 65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@2.7.16)
@@ -12806,6 +12768,9 @@ snapshots:
       - vue
 
   unocss@65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3)):
+=======
+  unocss@65.4.2(rollup@4.30.1)(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3)):
+>>>>>>> ae808c93 (feat!: drop vue 2)
     dependencies:
       '@unocss/astro': 65.4.3(rollup@4.32.0)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       '@unocss/cli': 65.4.3(rollup@4.32.0)
@@ -12831,14 +12796,25 @@ snapshots:
       - supports-color
       - vue
 
+<<<<<<< HEAD
   unplugin-combine@1.2.0(@rspack/core@1.2.2(@swc/helpers@0.5.15))(esbuild@0.24.2)(rolldown@1.0.0-beta.3(@babel/runtime@7.26.7)(typescript@5.7.3))(rollup@4.32.0)(unplugin@1.16.1)(vite@6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.97.1(esbuild@0.24.2)):
+=======
+  unplugin-combine@1.1.1(@rspack/core@1.1.8(@swc/helpers@0.5.15))(esbuild@0.24.2)(rolldown@1.0.0-beta.1(@babel/runtime@7.26.0))(rollup@4.30.1)(unplugin@2.1.2)(vite@6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0))(webpack@5.97.1(esbuild@0.24.2)):
+>>>>>>> ae808c93 (feat!: drop vue 2)
     optionalDependencies:
       '@rspack/core': 1.2.2(@swc/helpers@0.5.15)
       esbuild: 0.24.2
+<<<<<<< HEAD
       rolldown: 1.0.0-beta.3(@babel/runtime@7.26.7)(typescript@5.7.3)
       rollup: 4.32.0
       unplugin: 1.16.1
       vite: 6.0.11(@types/node@22.10.10)(jiti@2.4.2)(less@4.2.2)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0)
+=======
+      rolldown: 1.0.0-beta.1(@babel/runtime@7.26.0)
+      rollup: 4.30.1
+      unplugin: 2.1.2
+      vite: 6.0.7(@types/node@22.10.7)(jiti@2.4.2)(less@4.2.1)(terser@5.37.0)(tsx@4.19.2)(yaml@2.7.0)
+>>>>>>> ae808c93 (feat!: drop vue 2)
       webpack: 5.97.1(esbuild@0.24.2)
 
   unplugin-isolated-decl@0.10.5(oxc-transform@0.48.1)(rollup@4.32.0)(typescript@5.7.3):
@@ -13246,10 +13222,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-flow-layout@0.1.1(vue@2.7.16):
-    dependencies:
-      vue: 2.7.16
-
   vue-flow-layout@0.1.1(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       vue: 3.5.13(typescript@5.7.3)
@@ -13264,11 +13236,6 @@ snapshots:
       '@vue/language-core': 2.1.10(typescript@5.7.3)
       semver: 7.6.3
       typescript: 5.7.3
-
-  vue@2.7.16:
-    dependencies:
-      '@vue/compiler-sfc': 2.7.16
-      csstype: 3.1.3
 
   vue@3.5.13(typescript@5.7.3):
     dependencies:

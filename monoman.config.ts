@@ -199,7 +199,6 @@ Please refer to [README.md](${githubLink}#readme)\n`
       'docs/package.json',
       'playground/*/package.json',
     ],
-    exclude: ['playground/vue2/package.json'],
   }),
   ...noDuplicatedDeps({
     include: [

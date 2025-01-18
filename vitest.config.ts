@@ -20,7 +20,6 @@ export default defineConfig({
   },
   test: {
     reporters: process.env.GITHUB_ACTIONS ? ['dot', 'github-actions'] : ['dot'],
-    setupFiles: ['./vitest-setup.ts'],
   },
   plugins: [Macros()],
 })

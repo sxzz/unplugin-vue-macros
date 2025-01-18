@@ -70,18 +70,15 @@ vue-macros init
 
 ## 模板
 
-- [Vite + Vue 3](https://github.com/vue-macros/vite)
-- [Vite + Vue 2](https://github.com/vue-macros/vue-macros/tree/main/playground/vue2)
-- [Nuxt 3 + Vue 3](https://github.com/vue-macros/nuxt)
-- [Rsbuild + Vue 3](https://github.com/vue-macros/vue3-rsbuild)
-- [Vue CLI + Vue 2](https://github.com/vue-macros/vue2-vue-cli)
-- [Rspack + Vue 2](https://github.com/vue-macros/vue2-rspack)
+- [Vite](https://github.com/vue-macros/vite)
+- [Nuxt](https://github.com/vue-macros/nuxt)
+- [Rsbuild](https://github.com/vue-macros/vue3-rsbuild)
 
 🌟 欢迎更多模板！
 
 ## Nuxt 集成
 
-如果你使用 [Nuxt 3](https://nuxt.com/)，请阅读 [Nuxt 集成](./nuxt-integration.md)。
+如果你使用 [Nuxt](https://nuxt.com/)，请阅读 [Nuxt 集成](./nuxt-integration.md)。
 
 ## 构建工具集成
 

@@ -9,9 +9,6 @@ describe('fixtures', async () => {
       query: '?raw',
       import: 'default',
     }),
-    (args, id, code) => {
-      const version = id.includes('vue2') ? 2 : 3
-      return transformDefineModels(code, id, version, true)?.code
-    },
+    (args, id, code) => transformDefineModels(code, id)?.code,
   )
 })
