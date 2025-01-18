@@ -38,7 +38,7 @@ export default defineConfig({
 
   /** 默认 true  */
   defineModels: {
-    unified: true,
+    // ...
   },
 
   // 开启功能

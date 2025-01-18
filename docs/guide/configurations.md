@@ -37,7 +37,7 @@ export default defineConfig({
 
   /** Defaults to true */
   defineModels: {
-    unified: true,
+    // ...
   },
 
   // Enable features
