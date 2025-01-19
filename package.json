@@ -81,7 +81,7 @@
     "webpack": "^5.97.1"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=20.18.0"
   },
   "pnpm": {
     "peerDependencyRules": {

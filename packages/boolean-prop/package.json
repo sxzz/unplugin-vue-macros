@@ -104,6 +104,6 @@
     "@vue/compiler-sfc": "catalog:"
   },
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=20.18.0"
   }
 }

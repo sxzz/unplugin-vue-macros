@@ -40,7 +40,7 @@ export function config({
   return {
     entry,
     format: ['cjs', 'esm'],
-    target: 'node18',
+    target: 'node20.18',
     splitting,
     cjsInterop: true,
     watch: !!process.env.DEV,
