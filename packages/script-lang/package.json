@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/script-lang",
   "version": "0.2.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "scriptLang feature from Vue Macros.",
   "type": "module",
   "keywords": [

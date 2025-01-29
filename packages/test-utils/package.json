@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/test-utils",
   "version": "1.7.1",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "Test utilities for Vue Macros.",
   "type": "module",
   "keywords": [

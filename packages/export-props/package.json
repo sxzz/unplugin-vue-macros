@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/export-props",
   "version": "0.6.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "exportProps feature from Vue Macros.",
   "type": "module",
   "keywords": [

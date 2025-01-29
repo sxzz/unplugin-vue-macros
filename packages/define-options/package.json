@@ -1,7 +1,7 @@
 {
   "name": "unplugin-vue-define-options",
   "version": "1.5.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "Add defineOptions macro for Vue <script setup>.",
   "type": "module",
   "keywords": [

@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/volar",
   "version": "0.30.13",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "Volar plugin for Vue Macros.",
   "type": "commonjs",
   "keywords": [

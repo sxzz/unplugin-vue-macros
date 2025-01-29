@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/define-props-refs",
   "version": "1.3.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "definePropsRefs feature from Vue Macros.",
   "type": "module",
   "keywords": [

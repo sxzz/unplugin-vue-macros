@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/chain-call",
   "version": "0.4.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "chainCall feature from Vue Macros.",
   "type": "module",
   "keywords": [

@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/export-render",
   "version": "0.3.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "exportRender feature from Vue Macros.",
   "type": "module",
   "keywords": [

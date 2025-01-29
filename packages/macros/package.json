@@ -1,7 +1,7 @@
 {
   "name": "unplugin-vue-macros",
   "version": "2.13.11",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "Explore more macros and syntax sugar to Vue.",
   "type": "module",
   "keywords": [

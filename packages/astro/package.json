@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/astro",
   "version": "0.6.16",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "Astro integration of Vue Macros.",
   "type": "module",
   "keywords": [
@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "catalog:",
-    "astro": "^5.1.9"
+    "astro": "^5.1.10"
   },
   "engines": {
     "node": ">=16.14.0"

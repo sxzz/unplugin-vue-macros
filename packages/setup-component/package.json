@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/setup-component",
   "version": "0.18.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "setupComponent feature from Vue Macros.",
   "type": "module",
   "keywords": [

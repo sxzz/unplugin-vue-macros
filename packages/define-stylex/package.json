@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/define-stylex",
   "version": "0.2.3",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "defineStylex feature from Vue Macros.",
   "type": "module",
   "keywords": [

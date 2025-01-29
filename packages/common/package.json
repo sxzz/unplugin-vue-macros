@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/common",
   "version": "1.16.1",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "common feature from Vue Macros.",
   "type": "module",
   "keywords": [

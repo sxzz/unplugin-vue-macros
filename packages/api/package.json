@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/api",
   "version": "0.13.3",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "General API for Vue Macros.",
   "type": "module",
   "keywords": [

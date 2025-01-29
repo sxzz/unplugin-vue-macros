@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/short-bind",
   "version": "1.1.5",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "shortBind feature from Vue Macros.",
   "type": "module",
   "keywords": [

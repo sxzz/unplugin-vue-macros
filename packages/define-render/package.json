@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/define-render",
   "version": "1.6.6",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "defineRender feature from Vue Macros.",
   "type": "module",
   "keywords": [

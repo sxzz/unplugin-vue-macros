@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/jsx-directive",
   "version": "0.10.1",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "jsxDirective feature from Vue Macros.",
   "type": "module",
   "keywords": [

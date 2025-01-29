@@ -1,7 +1,7 @@
 {
   "name": "@vue-macros/nuxt",
   "version": "1.12.16",
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.1.0",
   "description": "nuxt feature from Vue Macros.",
   "type": "module",
   "keywords": [
@@ -56,13 +56,13 @@
     "nuxt": "^3.0.0"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.15.3",
+    "@nuxt/kit": "^3.15.4",
     "@vue-macros/common": "workspace:*",
     "unplugin-vue-macros": "workspace:*"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.0.0-beta.3",
-    "@nuxt/schema": "^3.15.3",
+    "@nuxt/schema": "^3.15.4",
     "@vue/language-core": "catalog:"
   },
   "engines": {
