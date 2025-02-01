@@ -10,7 +10,7 @@ Vue Macros 是一个实现 Vue 非官方提案和想法的库，探索并扩展�
 
 ## 要求
 
-- Node.js `>= v16.14.0`
+- Node.js `>= v20.18.0`
 - Vue `>= v2.7` 或 Vue `>= v3.0`
   - 某些功能需要 Vue `>= v3.2.25`
 - VSCode 扩展 [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 和 `vue-tsc` 为 <code>v{{ version }}</code>
@@ -70,18 +70,15 @@ vue-macros init
 
 ## 模板
 
-- [Vite + Vue 3](https://github.com/vue-macros/vite)
-- [Vite + Vue 2](https://github.com/vue-macros/vue-macros/tree/main/playground/vue2)
-- [Nuxt 3 + Vue 3](https://github.com/vue-macros/nuxt)
-- [Rsbuild + Vue 3](https://github.com/vue-macros/vue3-rsbuild)
-- [Vue CLI + Vue 2](https://github.com/vue-macros/vue2-vue-cli)
-- [Rspack + Vue 2](https://github.com/vue-macros/vue2-rspack)
+- [Vite](https://github.com/vue-macros/vite)
+- [Nuxt](https://github.com/vue-macros/nuxt)
+- [Rsbuild](https://github.com/vue-macros/vue3-rsbuild)
 
 🌟 欢迎更多模板！
 
 ## Nuxt 集成
 
-如果你使用 [Nuxt 3](https://nuxt.com/)，请阅读 [Nuxt 集成](./nuxt-integration.md)。
+如果你使用 [Nuxt](https://nuxt.com/)，请阅读 [Nuxt 集成](./nuxt-integration.md)。
 
 ## 构建工具集成
 

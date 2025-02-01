@@ -3,7 +3,7 @@
     "target": "ESNext",
     "jsx": "preserve",
     "jsxImportSource": "vue",
-    "lib": ["ES2022"],
+    "lib": ["ES2023"],
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "bundler",

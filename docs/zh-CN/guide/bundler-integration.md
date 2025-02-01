@@ -166,9 +166,7 @@ export default defineConfig({
 
 ## TypeScript 支持
 
-::: code-group
-
-```json {0} [Vue 3]
+```json {0}
 // tsconfig.json
 {
   "compilerOptions": {
@@ -177,18 +175,6 @@ export default defineConfig({
   }
 }
 ```
-
-```json {0} [Vue 2]
-// tsconfig.json
-{
-  "compilerOptions": {
-    // ...
-    "types": ["unplugin-vue-macros/vue2-macros-global" /* ... */]
-  }
-}
-```
-
-:::
 
 ## Volar 支持
 

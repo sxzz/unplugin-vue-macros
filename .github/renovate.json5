@@ -3,7 +3,7 @@
   extends: ['github>sxzz/renovate-config'],
   packageRules: [
     {
-      matchPackageNames: ['vue', 'vue2'],
+      matchPackageNames: ['vue'],
       matchUpdateTypes: ['major'],
       enabled: false,
     },

@@ -2,7 +2,6 @@ import {
   DEFINE_EMITS,
   DEFINE_MODELS,
   DEFINE_MODELS_DOLLAR,
-  DEFINE_OPTIONS,
   DEFINE_PROPS,
   generateTransform,
   HELPER_PREFIX,
@@ -21,10 +20,7 @@ import type {
   Identifier,
   LVal,
   Node,
-  ObjectExpression,
   ObjectPattern,
-  ObjectProperty,
-  Statement,
   TSInterfaceBody,
   TSType,
   TSTypeLiteral,
@@ -34,8 +30,6 @@ import type {
 export function transformDefineModels(
   code: string,
   id: string,
-  version: number,
-  unified: boolean,
 ): CodeTransform | undefined {
   let hasDefineProps = false
   let hasDefineEmits = false
@@ -55,7 +49,6 @@ export function transformDefineModels(
   let modelDestructureDecl: ObjectPattern | undefined
 
   const modelIdentifiers = new Set<Identifier>()
-  const modelVue2: { event: string; prop: string } = { prop: '', event: '' }
   let mode: 'reactivity-transform' | 'runtime' | undefined
 
   function processDefinePropsOrEmits(node: Node, declId?: LVal) {
@@ -147,74 +140,6 @@ export function transformDefineModels(
     return true
   }
 
-  function processDefineOptions(node: Node) {
-    if (!isCallOf(node, DEFINE_OPTIONS)) return false
-
-    const [arg] = node.arguments
-    if (arg) processVue2Model(arg)
-
-    return true
-  }
-
-  function processVue2Script() {
-    if (!script) return
-    const scriptAst = getScriptAst()!.body
-    if (scriptAst.length === 0) return
-
-    // process normal <script>
-    for (const node of scriptAst as Statement[]) {
-      if (node.type === 'ExportDefaultDeclaration') {
-        const { declaration } = node
-        if (declaration.type === 'ObjectExpression') {
-          processVue2Model(declaration)
-        } else if (
-          declaration.type === 'CallExpression' &&
-          declaration.callee.type === 'Identifier' &&
-          ['defineComponent', 'DO_defineComponent'].includes(
-            declaration.callee.name,
-          )
-        ) {
-          declaration.arguments.forEach((arg) => {
-            if (arg.type === 'ObjectExpression') {
-              processVue2Model(arg)
-            }
-          })
-        }
-      }
-    }
-  }
-
-  function processVue2Model(node: Node) {
-    // model: {
-    //   prop: 'checked',
-    //   event: 'change'
-    // }
-    if (node.type !== 'ObjectExpression') return false
-
-    const model = node.properties.find(
-      (prop) =>
-        prop.type === 'ObjectProperty' &&
-        prop.key.type === 'Identifier' &&
-        prop.key.name === 'model' &&
-        prop.value.type === 'ObjectExpression' &&
-        prop.value.properties.length === 2,
-    ) as ObjectProperty
-
-    if (!model) return false
-    ;(model.value as ObjectExpression).properties.forEach((propertyItem) => {
-      if (
-        propertyItem.type === 'ObjectProperty' &&
-        propertyItem.key.type === 'Identifier' &&
-        propertyItem.value.type === 'StringLiteral' &&
-        ['prop', 'event'].includes(propertyItem.key.name)
-      ) {
-        const key = propertyItem.key.name as 'prop' | 'event'
-        modelVue2[key] = propertyItem.value.value
-      }
-    })
-    return true
-  }
-
   function extractPropsDefinitions(node: TSTypeLiteral | TSInterfaceBody) {
     const members = node.type === 'TSTypeLiteral' ? node.members : node.body
     const map: Record<
@@ -268,24 +193,6 @@ export function transformDefineModels(
       }
     }
     return map
-  }
-
-  function getPropKey(key: string, omitDefault = false) {
-    if (unified && version === 2 && key === 'modelValue') {
-      return 'value'
-    }
-    return !omitDefault ? key : undefined
-  }
-
-  function getEventKey(key: string, omitDefault = false) {
-    if (version === 2) {
-      if (modelVue2.prop === key) {
-        return modelVue2.event
-      } else if (key === 'value' || (unified && key === 'modelValue')) {
-        return 'input'
-      }
-    }
-    return !omitDefault ? `update:${key}` : undefined
   }
 
   function rewriteMacros() {
@@ -457,7 +364,7 @@ export function transformDefineModels(
   }
 
   if (!code.includes(DEFINE_MODELS)) return
-  const { script, scriptSetup, getSetupAst, getScriptAst } = parseSFC(code, id)
+  const { scriptSetup, getSetupAst } = parseSFC(code, id)
   if (!scriptSetup) return
 
   const setupOffset = scriptSetup.loc.start.offset
@@ -466,16 +373,10 @@ export function transformDefineModels(
 
   const s = new MagicStringAST(code)
 
-  if (version === 2) processVue2Script()
-
   // process <script setup>
   for (const node of setupAst) {
     if (node.type === 'ExpressionStatement') {
       processDefinePropsOrEmits(node.expression)
-
-      if (version === 2) {
-        processDefineOptions(node.expression)
-      }
 
       if (
         processDefineModels(node.expression) &&
@@ -553,4 +454,12 @@ export function transformDefineModels(
 
 function stringifyValue(value: string | undefined) {
   return value !== undefined ? JSON.stringify(value) : 'undefined'
+}
+
+function getPropKey(key: string, omitDefault = false) {
+  return !omitDefault ? key : undefined
+}
+
+function getEventKey(key: string, omitDefault = false) {
+  return !omitDefault ? `update:${key}` : undefined
 }

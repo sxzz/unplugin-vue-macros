@@ -279,133 +279,7 @@ console.log(props)
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue2/basic.vue 1`] = `
-"<script setup lang="ts">
-import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
-let { value, title } = __MACROS_useVModel(["value", undefined, "input"], "title")
-
-const { id } = defineProps<({ id: string }) & {
-  value: string;
-title: string
-}>()
-
-const emit = defineEmits<({
-  (evt: 'change'): void
-}) & {
-  (evt: 'input', value: string): void;
-  (evt: 'update:title', value: string): void;
-}>()
-
-{
-  value.value = 'hello'
-  title.value = 'world'
-  emit('change')
-
-  {
-    let modelValue = 'world'
-    modelValue = 'foo'
-  }
-}
-</script>
-"
-`;
-
-exports[`fixtures > ./fixtures/runtime/vue2/custom-model.vue 1`] = `
-"<script lang="ts">
-export default {
-  model: {
-    prop: 'value',
-    event: 'changeInput',
-  },
-}
-</script>
-<script setup lang="ts">
-import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
-let { value, title } = __MACROS_useVModel(["value", undefined, "changeInput"], "title")
-
-const { id } = defineProps<({ id: string }) & {
-  value: string;
-title: string
-}>()
-
-const emit = defineEmits<({
-  (evt: 'change'): void
-}) & {
-  (evt: 'changeInput', value: string): void;
-  (evt: 'update:title', value: string): void;
-}>()
-
-{
-  value.value = 'hello'
-  title.value = 'world'
-  emit('change')
-
-  {
-    let modelValue = 'world'
-    modelValue = 'foo'
-  }
-}
-</script>
-"
-`;
-
-exports[`fixtures > ./fixtures/runtime/vue2/custom-model-defineComponent.vue 1`] = `
-"<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-  model: {
-    prop: 'value',
-    event: 'changeInput',
-  },
-})
-</script>
-<script setup lang="ts">
-import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
-let { value, title } = __MACROS_useVModel(["value", undefined, "changeInput"], "title")
-
-const { id } = defineProps<({ id: string }) & {
-  value: string;
-title: string
-}>()
-
-const emit = defineEmits<({
-  (evt: 'change'): void
-}) & {
-  (evt: 'changeInput', value: string): void;
-  (evt: 'update:title', value: string): void;
-}>()
-
-{
-  value.value = 'hello'
-  title.value = 'world'
-  emit('change')
-
-  {
-    let modelValue = 'world'
-    modelValue = 'foo'
-  }
-}
-</script>
-"
-`;
-
-exports[`fixtures > ./fixtures/runtime/vue2/v-model.vue 1`] = `
-"<script setup lang="ts">
-import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
-defineProps<{
-  value: string
-}>();
-defineEmits<{
-  (evt: 'input', value: string): void;
-}>();
-const { modelValue } = __MACROS_useVModel(["modelValue", "value", "input"])
-
-modelValue.value = 'hello'
-</script>
-"
-`;
-
-exports[`fixtures > ./fixtures/runtime/vue3/assignment.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/assignment.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -423,7 +297,7 @@ modelValue.value = title.value = '123'
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/basic.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/basic.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -446,9 +320,9 @@ modelValue.value = 'newValue'
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/define-props-runtime.vue 1`] = `undefined`;
+exports[`fixtures > ./fixtures/runtime/define-props-runtime.vue 1`] = `undefined`;
 
-exports[`fixtures > ./fixtures/runtime/vue3/empty.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/empty.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -462,11 +336,11 @@ __MACROS_useVModel()
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/error-empty-define-props.vue 1`] = `[SyntaxError: defineProps() expected a type parameter when used with defineModels.]`;
+exports[`fixtures > ./fixtures/runtime/error-empty-define-props.vue 1`] = `[SyntaxError: defineProps() expected a type parameter when used with defineModels.]`;
 
-exports[`fixtures > ./fixtures/runtime/vue3/error-runtime.vue 1`] = `[SyntaxError: defineProps() cannot accept non-type arguments when used with defineModels()]`;
+exports[`fixtures > ./fixtures/runtime/error-runtime.vue 1`] = `[SyntaxError: defineProps() cannot accept non-type arguments when used with defineModels()]`;
 
-exports[`fixtures > ./fixtures/runtime/vue3/multi-decl.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/multi-decl.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -483,7 +357,7 @@ const a = 'b',
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/no-decl.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/no-decl.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -499,7 +373,7 @@ __MACROS_useVModel("modelValue", "visible")
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/no-type.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/no-type.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -515,7 +389,7 @@ __MACROS_useVModel("foo", "bar")
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/optional.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/optional.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -530,7 +404,7 @@ __MACROS_useVModel("foo")
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/options.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/options.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -550,7 +424,7 @@ console.log(foo.value, bar.value)
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/rename.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/rename.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -568,7 +442,7 @@ console.log(visible, foo)
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/rest.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/rest.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -586,7 +460,7 @@ rest.modelValue.value = 'foo'
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/with-defaults.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/with-defaults.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineEmits<{
@@ -609,7 +483,7 @@ console.log(foo)
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/with-define-emits.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/with-define-emits.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineProps<{
@@ -629,7 +503,7 @@ modelValue.value = 'hello'
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/with-define-props.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/with-define-props.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineEmits<{
@@ -648,7 +522,7 @@ visible: boolean
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/with-define-props-empty.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/with-define-props-empty.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineEmits<{
@@ -666,7 +540,7 @@ visible: boolean
 "
 `;
 
-exports[`fixtures > ./fixtures/runtime/vue3/with-define-props-ref.vue 1`] = `
+exports[`fixtures > ./fixtures/runtime/with-define-props-ref.vue 1`] = `
 "<script setup lang="ts">
 import __MACROS_useVModel from "/vue-macros/define-models/use-vmodel";
 defineEmits<{

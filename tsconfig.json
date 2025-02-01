@@ -1,7 +1,6 @@
 {
   "references": [
-    { "path": "./tsconfig.dts.vue3.json" },
-    { "path": "./tsconfig.dts.vue2.json" },
+    { "path": "./tsconfig.dts.json" },
     { "path": "./tsconfig.lib.json" },
     { "path": "./tsconfig.test.json" },
     { "path": "./tsconfig.fixture.json" }

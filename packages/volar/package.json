@@ -289,6 +289,6 @@
     "vue-tsc": "catalog:"
   },
   "engines": {
-    "node": ">=16.14.0"
+    "node": ">=20.18.0"
   }
 }

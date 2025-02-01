@@ -11,10 +11,9 @@ function transformDefineModels(options: {
   sfc: Sfc
   typeArg: import('typescript').TypeNode
   vueLibName: string
-  unified: boolean
   ts: typeof import('typescript')
 }) {
-  const { codes, typeArg, unified, vueLibName, ts } = options
+  const { codes, typeArg, vueLibName, ts } = options
 
   const propStrings: Code[] = []
   const emitStrings: Code[] = []
@@ -23,13 +22,8 @@ function transformDefineModels(options: {
     for (const member of typeArg.members) {
       if (ts.isPropertySignature(member) && member.type) {
         const type = getText(member.type, options)
-        let name = getText(member.name, options)
-        if (unified && name === 'modelValue') {
-          name = 'value'
-          emitStrings.push(`input: [value: ${type}]`)
-        } else {
-          emitStrings.push(`'update:${name}': [${name}: ${type}]`)
-        }
+        const name = getText(member.name, options)
+        emitStrings.push(`'update:${name}': [${name}: ${type}]`)
 
         propStrings.push(`${name}${member.questionToken ? '?' : ''}: ${type}`)
       }
@@ -75,7 +69,7 @@ const plugin: VueMacrosPlugin<'defineModels'> = (ctx, options = {}) => {
   const filter = createFilter(options)
   const {
     modules: { typescript: ts },
-    vueCompilerOptions: { target, lib },
+    vueCompilerOptions: { lib },
   } = ctx
 
   return {
@@ -92,14 +86,11 @@ const plugin: VueMacrosPlugin<'defineModels'> = (ctx, options = {}) => {
       const typeArg = getTypeArg(ts, sfc)
       if (!typeArg) return
 
-      const unified = target < 3 && (options?.unified ?? true)
-
       transformDefineModels({
         codes: embeddedFile.content,
         sfc,
         typeArg,
         vueLibName: lib,
-        unified,
         ts,
       })
     },

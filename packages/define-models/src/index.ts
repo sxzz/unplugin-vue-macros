@@ -22,19 +22,9 @@ import {
   useVmodelHelperId,
 } from './core/helper'
 
-export interface Options extends BaseOptions {
-  /**
-   * Unified mode, only works for Vue 2
-   *
-   * Converts `modelValue` to `value`
-   */
-  unified?: boolean
-}
+export interface Options extends BaseOptions {}
 
-export type OptionsResolved = MarkRequired<
-  Options,
-  'include' | 'version' | 'unified'
->
+export type OptionsResolved = MarkRequired<Options, 'include' | 'version'>
 
 function resolveOptions(
   options: Options,
@@ -47,7 +37,6 @@ function resolveOptions(
   )
   return {
     include,
-    unified: true,
     ...options,
     version,
   }
@@ -80,7 +69,7 @@ const plugin: UnpluginInstance<Options | undefined, false> = createUnplugin(
 
       transformInclude: filter,
       transform(code, id) {
-        return transformDefineModels(code, id, options.version, options.unified)
+        return transformDefineModels(code, id)
       },
     }
   },

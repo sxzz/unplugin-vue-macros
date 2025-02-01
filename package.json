@@ -14,7 +14,6 @@
     "docs:preview": "pnpm run -C ./docs preview",
     "docs:build": "pnpm run -C ./docs build",
     "play": "pnpm run play:vue3",
-    "play:vue2": "pnpm run -C ./playground/vue2 dev",
     "play:vue3": "pnpm run -C ./playground/vue3 dev",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -32,8 +31,7 @@
     "typecheck:test": "vue-tsc --noEmit -p tsconfig.test.json",
     "typecheck:docs": "vue-tsc --noEmit -p ./docs/tsconfig.json",
     "typecheck:fixture": "vue-tsc --noEmit -p tsconfig.fixture.json",
-    "typecheck:playground:vue3": "pnpm run -C ./playground/vue3 typecheck",
-    "typecheck:playground:vue2": "pnpm run -C ./playground/vue2 typecheck"
+    "typecheck:playground": "pnpm run -C ./playground/vue3 typecheck"
   },
   "devDependencies": {
     "@babel/types": "catalog:",
@@ -80,11 +78,10 @@
     "vitest": "catalog:",
     "vue": "catalog:",
     "vue-tsc": "catalog:",
-    "vue2": "npm:vue@^2.7.16",
     "webpack": "^5.97.1"
   },
   "engines": {
-    "node": ">=16.14.0"
+    "node": ">=20.18.0"
   },
   "pnpm": {
     "peerDependencyRules": {

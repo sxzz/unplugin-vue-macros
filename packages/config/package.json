@@ -132,6 +132,6 @@
     "unplugin-vue-define-options": "workspace:*"
   },
   "engines": {
-    "node": ">=16.14.0"
+    "node": ">=20.18.0"
   }
 }

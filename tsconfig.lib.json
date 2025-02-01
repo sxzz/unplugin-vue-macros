@@ -14,7 +14,6 @@
     "packages/devtools/src/client",
     "**/*.config.*",
     "**/dist",
-    "**/tests",
-    "**/vue2-macros*.d.ts"
+    "**/tests"
   ]
 }

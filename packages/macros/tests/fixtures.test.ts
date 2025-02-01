@@ -13,11 +13,10 @@ describe('fixtures', async () => {
   await testFixtures(
     ['tests/fixtures/**/*.{vue,js,jsx,ts,tsx}', '!tests/fixtures/types.ts'],
     (args, id) => {
-      const version = id.includes('vue2') ? 2 : 3
       return rollupBuild(id, [
         VueMacros({
           setupSFC: true,
-          version,
+          version: 3,
           plugins: {
             vue: RollupVue({
               include: [/\.vue$/, /\.setup\.[cm]?[jt]sx?/],

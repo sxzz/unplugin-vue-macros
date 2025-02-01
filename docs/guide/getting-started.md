@@ -11,7 +11,7 @@ We assume you are already familiar with the basic usages of Vue before you conti
 
 ## Requirements
 
-- Node.js `>= v16.14.0`.
+- Node.js `>= v20.18.0`.
 - Vue `>= v2.7` or Vue `>= v3.0`.
   - Some features need Vue `>= v3.2.25`.
 - VSCode extension [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) and `vue-tsc` are <code>v{{ version }}</code>
@@ -71,18 +71,15 @@ You will be presented with prompts for several optional experimental features.
 
 ## Templates
 
-- [Vite + Vue 3](https://github.com/vue-macros/vite)
-- [Vite + Vue 2](https://github.com/vue-macros/vue-macros/tree/main/playground/vue2)
-- [Nuxt 3 + Vue 3](https://github.com/vue-macros/nuxt)
-- [Rsbuild + Vue 3](https://github.com/vue-macros/vue3-rsbuild)
-- [Vue CLI + Vue 2](https://github.com/vue-macros/vue2-vue-cli)
-- [Rspack + Vue 2](https://github.com/vue-macros/vue2-rspack)
+- [Vite](https://github.com/vue-macros/vite)
+- [Nuxt](https://github.com/vue-macros/nuxt)
+- [Rsbuild](https://github.com/vue-macros/vue3-rsbuild)
 
 🌟 More templates are welcome!
 
 ## Nuxt Integration
 
-If you're using [Nuxt 3](https://nuxt.com/), read the [Nuxt Integration](./nuxt-integration.md).
+If you're using [Nuxt](https://nuxt.com/), read the [Nuxt Integration](./nuxt-integration.md).
 
 ## Bundler Integrations
 

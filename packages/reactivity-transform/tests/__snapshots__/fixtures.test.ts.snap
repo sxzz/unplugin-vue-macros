@@ -1,127 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`fixtures > tests/fixtures/vue2/basic.ts 1`] = `
-"// basic.js
-import { ref } from 'vue';
-
-let foo = ref("msg");
-foo.value = "world";
-
-export { foo };
-"
-`;
-
-exports[`fixtures > tests/fixtures/vue2/basic.vue 1`] = `
-"// basic.js
-import { defineComponent, ref } from 'vue';
-import __normalizer from '[NULL]plugin-vue2:normalizer';
-
-var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "basic",
-  setup(__props) {
-    let foo = ref("msg");
-    foo.value = "world";
-    return { __sfc: true, foo, _ref: ref };
-  }
-});
-
-const _sfc_render = null;
-const _sfc_staticRenderFns = null;
-var __component__ = /* @__PURE__ */ __normalizer(
-  _sfc_main,
-  _sfc_render,
-  _sfc_staticRenderFns,
-  false,
-  null,
-  null,
-  null,
-  null
-);
-__FILE__;
-var basic = __component__.exports;
-
-export { basic as default };
-"
-`;
-
-exports[`fixtures > tests/fixtures/vue2/destructure-props.vue 1`] = `
-"// destructure-props.js
-import { defineComponent } from 'vue';
-import { createPropsRestProxy } from '/vue-macros/reactivity-transform/helper';
-import __normalizer from '[NULL]plugin-vue2:normalizer';
-
-var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "destructure-props",
-  props: {
-    foo: { type: String, required: true, default: "foo" },
-    bar: { type: Number, required: true, default: 10 },
-    baz: { type: Boolean, required: true }
-  },
-  setup(__props) {
-    const props = createPropsRestProxy(__props, ["foo", "bar"]);
-    console.log(__props.foo, __props.bar, props);
-    return { __sfc: true, props, createPropsRestProxy };
-  }
-});
-
-const _sfc_render = null;
-const _sfc_staticRenderFns = null;
-var __component__ = /* @__PURE__ */ __normalizer(
-  _sfc_main,
-  _sfc_render,
-  _sfc_staticRenderFns,
-  false,
-  null,
-  null,
-  null,
-  null
-);
-__FILE__;
-var destructureProps = __component__.exports;
-
-export { destructureProps as default };
-"
-`;
-
-exports[`fixtures > tests/fixtures/vue2/script-and-setup.vue 1`] = `
-"// script-and-setup.js
-import { ref, defineComponent } from 'vue';
-import __normalizer from '[NULL]plugin-vue2:normalizer';
-
-let foo = ref("msg");
-foo.value = "world";
-var _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "script-and-setup",
-  setup(__props) {
-    foo.value = "foo";
-    return { __sfc: true, foo };
-  }
-});
-
-var _sfc_render = function render() {
-  var _vm = this, _c = _vm._self._c, _setup = _vm._self._setupProxy;
-  return _c("div", [_vm._v(" " + _vm._s(_setup.foo) + " ")]);
-};
-var _sfc_staticRenderFns = [];
-_sfc_render._withStripped = true;
-var __component__ = /* @__PURE__ */ __normalizer(
-  _sfc_main,
-  _sfc_render,
-  _sfc_staticRenderFns,
-  false,
-  null,
-  null,
-  null,
-  null
-);
-__FILE__;
-var scriptAndSetup = __component__.exports;
-
-export { scriptAndSetup as default };
-"
-`;
-
-exports[`fixtures > tests/fixtures/vue3/alias.vue 1`] = `
+exports[`fixtures > tests/fixtures/alias.vue 1`] = `
 "// alias.js
 import { toRef, toDisplayString } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
@@ -155,7 +34,7 @@ export { alias as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/as.ts 1`] = `
+exports[`fixtures > tests/fixtures/as.ts 1`] = `
 "// as.js
 import { ref } from 'vue';
 
@@ -167,7 +46,7 @@ export { foo };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/basic.ts 1`] = `
+exports[`fixtures > tests/fixtures/basic.ts 1`] = `
 "// basic.js
 import { ref } from 'vue';
 
@@ -178,7 +57,7 @@ export { foo };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/basic.vue 1`] = `
+exports[`fixtures > tests/fixtures/basic.vue 1`] = `
 "// basic.js
 import { defineComponent, ref } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
@@ -205,7 +84,7 @@ export { basic as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/default-value.vue 1`] = `
+exports[`fixtures > tests/fixtures/default-value.vue 1`] = `
 "// default-value.js
 import { defineComponent } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
@@ -235,7 +114,7 @@ export { defaultValue as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/destructure-props.vue 1`] = `
+exports[`fixtures > tests/fixtures/destructure-props.vue 1`] = `
 "// destructure-props.js
 import { defineComponent } from 'vue';
 import { createPropsRestProxy } from '/vue-macros/reactivity-transform/helper';
@@ -266,7 +145,7 @@ export { destructureProps as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/issue-608.vue 1`] = `
+exports[`fixtures > tests/fixtures/issue-608.vue 1`] = `
 "// issue-608.js
 import { defineComponent, ref, isRef } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
@@ -298,7 +177,7 @@ export { issue608 as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/issue-764.ts 1`] = `
+exports[`fixtures > tests/fixtures/issue-764.ts 1`] = `
 "// issue-764.js
 import { ref } from 'vue';
 
@@ -311,7 +190,7 @@ export { LogEntry };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/runtime-default.vue 1`] = `
+exports[`fixtures > tests/fixtures/runtime-default.vue 1`] = `
 "// runtime-default.js
 import { defineComponent, mergeDefaults } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
@@ -334,7 +213,7 @@ export { runtimeDefault as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/script-and-setup.vue 1`] = `
+exports[`fixtures > tests/fixtures/script-and-setup.vue 1`] = `
 "// script-and-setup.js
 import { ref, defineComponent, openBlock, createElementBlock, toDisplayString } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
@@ -371,7 +250,7 @@ export { scriptAndSetup as default };
 "
 `;
 
-exports[`fixtures > tests/fixtures/vue3/trailing-comma.vue 1`] = `
+exports[`fixtures > tests/fixtures/trailing-comma.vue 1`] = `
 "// trailing-comma.js
 import { defineComponent, ref } from 'vue';
 import _export_sfc from '[NULL]/plugin-vue/export-helper';
