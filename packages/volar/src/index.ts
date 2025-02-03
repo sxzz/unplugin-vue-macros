@@ -12,6 +12,7 @@ import exportExpose from './export-expose'
 import exportProps from './export-props'
 import exportRender from './export-render'
 import jsxDirective from './jsx-directive'
+import jsxMacros from './jsx-macros'
 import jsxRef from './jsx-ref'
 import scriptLang from './script-lang'
 import scriptSFC from './script-sfc'
@@ -42,6 +43,7 @@ const plugins = {
   scriptSFC,
   scriptLang,
   jsxRef,
+  jsxMacros,
 }
 
 const plugin: VueLanguagePlugin = (ctx) =>

@@ -36,6 +36,7 @@ import type { Options as OptionsExportProps } from '@vue-macros/export-props'
 import type { Options as OptionsExportRender } from '@vue-macros/export-render'
 import type { Options as OptionsHoistStatic } from '@vue-macros/hoist-static'
 import type { Options as OptionsJsxDirective } from '@vue-macros/jsx-directive'
+import type { Options as OptionsJsxMacros } from '@vue-macros/jsx-macros'
 import type { Options as OptionsNamedTemplate } from '@vue-macros/named-template'
 import type { Options as OptionsReactivityTransform } from '@vue-macros/reactivity-transform'
 import type { Options as OptionsScriptLang } from '@vue-macros/script-lang'
@@ -152,6 +153,11 @@ export interface FeatureOptionsMap {
    */
   jsxDirective: OptionsJsxDirective
   /**
+   * @see {@link https://vue-macros.dev/features/jsx-macros.html}
+   * @default false
+   */
+  jsxMacros: OptionsJsxMacros
+  /**
    * @see {@link https://vue-macros.dev/features/jsx-ref.html}
    * @default false
    */
@@ -267,6 +273,7 @@ export function resolveOptions(
     exportRender: resolveSubOptions('exportRender', false),
     hoistStatic: resolveSubOptions('hoistStatic'),
     jsxDirective: resolveSubOptions('jsxDirective'),
+    jsxMacros: resolveSubOptions('jsxMacros', false),
     jsxRef: resolveSubOptions('jsxRef', false),
     namedTemplate: resolveSubOptions('namedTemplate'),
     reactivityTransform: resolveSubOptions('reactivityTransform'),

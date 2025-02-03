@@ -26,3 +26,4 @@
 - [setupSFC](./setup-sfc.md)
 - [chainCall](./chain-call.md)
 - [defineStyleX](./define-stylex.md)
+- [jsxMaros](./jsx-macros.md)

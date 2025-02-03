@@ -21,7 +21,7 @@ export function resolveCtxMap(
 type __VLS_IsAny<T> = 0 extends 1 & T ? true : false;
 type __VLS_PickNotAny<A, B> = __VLS_IsAny<A> extends true ? B : A;
 type __VLS_Element = globalThis.JSX.Element;
-function __VLS_asFunctionalComponent<T, K = T extends new (...args: any) => any ? InstanceType<T> : unknown>(t: T, instance?: K):
+declare function __VLS_asFunctionalComponent<T, K = T extends new (...args: any) => any ? InstanceType<T> : unknown>(t: T, instance?: K):
   T extends new (...args: any) => any
   ? (props: (K extends { $props: infer Props } ? Props : any) & Record<string, unknown>, ctx?: any) => __VLS_Element & { __ctx?: {
     attrs?: any,
@@ -35,7 +35,7 @@ const __VLS_nativeElements = {
   ...{} as SVGElementTagNameMap,
   ...{} as HTMLElementTagNameMap,
 };
-function __VLS_getFunctionalComponentCtx<T, K, const S>(
+declare function __VLS_getFunctionalComponentCtx<T, K, const S>(
   comp: T,
   compInstance: K,
   s: S,
@@ -46,7 +46,7 @@ function __VLS_getFunctionalComponentCtx<T, K, const S>(
       ? Ctx
       : never
     : T extends (props: infer P, ctx: infer Ctx) => any
-      ? { props: P; slots: P['vSlots']; expose: P['vExpose'] } & Ctx
+      ? { props: P } & Ctx
       : {};\n`)
   }
 

@@ -36,6 +36,7 @@ import VueExportProps from '@vue-macros/export-props'
 import VueExportRender from '@vue-macros/export-render'
 import VueHoistStatic from '@vue-macros/hoist-static'
 import VueJsxDirective from '@vue-macros/jsx-directive'
+import VueJsxMacros from '@vue-macros/jsx-macros'
 import VueNamedTemplate from '@vue-macros/named-template'
 import VueReactivityTransform from '@vue-macros/reactivity-transform'
 import VueScriptLang from '@vue-macros/script-lang'
@@ -140,6 +141,7 @@ const plugin: UnpluginCombineInstance<Options | undefined> =
             : []),
 
           options.plugins.vue,
+          resolvePlugin(VueJsxMacros, framework, options.jsxMacros),
           options.plugins.vueJsx,
           resolvePlugin(VueDefineRender, framework, options.defineRender),
           setupComponentPlugins?.[1],

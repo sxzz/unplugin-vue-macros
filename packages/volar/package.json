@@ -102,10 +102,20 @@
       "require": "./dist/export-render.js",
       "import": "./dist/export-render.mjs"
     },
+    "./jsx": {
+      "dev": "./src/jsx.ts",
+      "require": "./dist/jsx.js",
+      "import": "./dist/jsx.mjs"
+    },
     "./jsx-directive": {
       "dev": "./src/jsx-directive.ts",
       "require": "./dist/jsx-directive.js",
       "import": "./dist/jsx-directive.mjs"
+    },
+    "./jsx-macros": {
+      "dev": "./src/jsx-macros.ts",
+      "require": "./dist/jsx-macros.js",
+      "import": "./dist/jsx-macros.mjs"
     },
     "./jsx-ref": {
       "dev": "./src/jsx-ref.ts",
@@ -219,9 +229,17 @@
         "require": "./dist/export-render.js",
         "import": "./dist/export-render.mjs"
       },
+      "./jsx": {
+        "require": "./dist/jsx.js",
+        "import": "./dist/jsx.mjs"
+      },
       "./jsx-directive": {
         "require": "./dist/jsx-directive.js",
         "import": "./dist/jsx-directive.mjs"
+      },
+      "./jsx-macros": {
+        "require": "./dist/jsx-macros.js",
+        "import": "./dist/jsx-macros.mjs"
       },
       "./jsx-ref": {
         "require": "./dist/jsx-ref.js",
@@ -279,12 +297,12 @@
     "@vue-macros/config": "workspace:*",
     "@vue-macros/short-bind": "workspace:*",
     "@vue-macros/short-vmodel": "workspace:*",
+    "@vue/compiler-dom": "catalog:",
     "@vue/language-core": "catalog:",
     "muggle-string": "^0.4.1",
     "ts-macro": "^0.1.13"
   },
   "devDependencies": {
-    "@vue/compiler-dom": "catalog:",
     "typescript": "catalog:",
     "vue-tsc": "catalog:"
   },
