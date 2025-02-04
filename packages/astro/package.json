@@ -1,6 +1,6 @@
 {
   "name": "@vue-macros/astro",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "packageManager": "pnpm@10.2.0",
   "description": "Astro integration of Vue Macros.",
   "type": "module",

@@ -1,5 +1,12 @@
 # @vue-macros/jsx-directive
 
+## 0.10.4
+### Patch Changes
+
+
+
+- [#910](https://github.com/vue-macros/vue-macros/pull/910) [`1fd6236`](https://github.com/vue-macros/vue-macros/commit/1fd6236bcb83d2003437421286615d4635ba150e) Thanks [@zhiyuanzmj](https://github.com/zhiyuanzmj)! - use compiler-sfc instead of compiler-core to expose walkIdentifiers
+
 ## 0.10.3
 ### Patch Changes
 
