@@ -11,7 +11,7 @@ const emit = defineEmits<{
 
 defineRender(() => (
   <form onSubmit_prevent onClick={() => emit('log', 1)}>
-    <slots.default />
+    <slots.default v-if={slots.default} />
   </form>
 ))
 </script>

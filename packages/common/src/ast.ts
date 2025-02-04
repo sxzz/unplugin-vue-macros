@@ -155,6 +155,7 @@ export function importHelperFn(
   local: string,
   from = 'vue',
   isDefault = false,
+  as: string = local,
 ) {
   const imported = isDefault ? 'default' : local
   const cacheKey = `${from}@${imported}`
@@ -163,8 +164,8 @@ export function importHelperFn(
       offset,
       `\nimport ${
         isDefault
-          ? HELPER_PREFIX + local
-          : `{ ${imported} as ${HELPER_PREFIX + local} }`
+          ? HELPER_PREFIX + as
+          : `{ ${imported} as ${HELPER_PREFIX + as} }`
       } from ${JSON.stringify(from)};`,
     )
     if (!importedMap.has(s)) {
@@ -174,5 +175,5 @@ export function importHelperFn(
     }
   }
 
-  return `${HELPER_PREFIX}${local}`
+  return `${HELPER_PREFIX}${as}`
 }

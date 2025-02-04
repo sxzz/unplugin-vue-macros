@@ -24,6 +24,12 @@
       },
       "scriptLang": {
         "include": ["**/script-lang/**"]
+      },
+      "jsxMacros": {
+        "include": ["**/jsx-macros/**"]
+      },
+      "scriptSFC": {
+        "include": ["**/jsx-macros/**"]
       }
     }
   }

@@ -461,6 +461,9 @@ importers:
       '@vue-macros/jsx-directive':
         specifier: workspace:*
         version: link:../jsx-directive
+      '@vue-macros/jsx-macros':
+        specifier: workspace:*
+        version: link:../jsx-macros
       '@vue-macros/named-template':
         specifier: workspace:*
         version: link:../named-template
@@ -727,6 +730,31 @@ importers:
         specifier: 'catalog:'
         version: 3.5.13(typescript@5.7.3)
 
+  packages/jsx-macros:
+    dependencies:
+      '@vue-macros/common':
+        specifier: workspace:*
+        version: link:../common
+      '@vue-macros/jsx-directive':
+        specifier: workspace:*
+        version: link:../jsx-directive
+      '@vue/compiler-core':
+        specifier: 'catalog:'
+        version: 3.5.13
+      hash-sum:
+        specifier: ^2.0.0
+        version: 2.0.0
+      unplugin:
+        specifier: 'catalog:'
+        version: 1.16.1
+    devDependencies:
+      '@types/hash-sum':
+        specifier: ^1.0.2
+        version: 1.0.2
+      vue:
+        specifier: 'catalog:'
+        version: 3.5.13(typescript@5.7.3)
+
   packages/macros:
     dependencies:
       '@vue-macros/better-define':
@@ -786,6 +814,9 @@ importers:
       '@vue-macros/jsx-directive':
         specifier: workspace:*
         version: link:../jsx-directive
+      '@vue-macros/jsx-macros':
+        specifier: workspace:*
+        version: link:../jsx-macros
       '@vue-macros/named-template':
         specifier: workspace:*
         version: link:../named-template
@@ -1026,6 +1057,9 @@ importers:
       '@vue-macros/short-vmodel':
         specifier: workspace:*
         version: link:../short-vmodel
+      '@vue/compiler-dom':
+        specifier: 'catalog:'
+        version: 3.5.13
       '@vue/language-core':
         specifier: 'catalog:'
         version: 2.1.10(typescript@5.7.3)
@@ -1036,9 +1070,6 @@ importers:
         specifier: ^0.1.13
         version: 0.1.13(rollup@4.34.2)(typescript@5.7.3)
     devDependencies:
-      '@vue/compiler-dom':
-        specifier: 'catalog:'
-        version: 3.5.13
       typescript:
         specifier: 'catalog:'
         version: 5.7.3
@@ -2822,6 +2853,9 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
+  '@types/hash-sum@1.0.2':
+    resolution: {integrity: sha512-UP28RddqY8xcU0SCEp9YKutQICXpaAq9N8U2klqF5hegGha7KzTOL8EdhIIV3bOSGBzjEpN9bU/d+nNZBdJYVw==}
+
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
 
@@ -4415,6 +4449,9 @@ packages:
   has-own-prop@2.0.0:
     resolution: {integrity: sha512-Pq0h+hvsVm6dDEa8x82GnLSYHOzNDt7f0ddFa3FqcQlgzEiptPqL+XrOJNavjOzSYiYWIrgeVYYgGlLmnxwilQ==}
     engines: {node: '>=8'}
+
+  hash-sum@2.0.0:
+    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
 
   hast-util-from-html@2.0.3:
     resolution: {integrity: sha512-CUSRHXyKjzHov8yKsQjGOElXy/3EKpyX56ELnkHH34vDVw1N1XSQ1ZcAvTyAPtGqLTuKP/uxM+aLkSPqF/EtMw==}
@@ -8647,6 +8684,8 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
+  '@types/hash-sum@1.0.2': {}
+
   '@types/hast@3.0.4':
     dependencies:
       '@types/unist': 3.0.3
@@ -10729,6 +10768,8 @@ snapshots:
   has-flag@4.0.0: {}
 
   has-own-prop@2.0.0: {}
+
+  hash-sum@2.0.0: {}
 
   hast-util-from-html@2.0.3:
     dependencies:

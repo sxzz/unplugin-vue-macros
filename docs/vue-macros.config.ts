@@ -6,6 +6,7 @@ export default defineConfig({
   defineProp: true,
   defineStyleX: true,
   exportRender: true,
+  jsxMacros: true,
   jsxRef: true,
   scriptLang: true,
   setupSFC: true,

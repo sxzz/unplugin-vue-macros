@@ -28,7 +28,7 @@ export function transformVSlot(
   const { codes, ts, ast, source, prefix } = options
 
   nodeMap.forEach(({ attributeMap, vSlotAttribute }, node) => {
-    const result: Code[] = [' vSlots={{']
+    const result: Code[] = [' v-slots={{']
     const attributes = Array.from(attributeMap)
     attributes.forEach(
       ([attribute, { children, vIfAttribute, vForAttribute }], index) => {

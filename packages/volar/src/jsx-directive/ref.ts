@@ -32,7 +32,7 @@ export function transformRef(
           getStart(attribute.initializer.expression, options),
           allCodeFeatures,
         ],
-        `} satisfies { ref: (e: Parameters<typeof ${ctxMap.get(node)}.expose>[0]) => any }) as {}}`,
+        `} satisfies { ref: (e: Parameters<typeof ${ctxMap.get(node)}['expose']>[0]) => any }) as {}}`,
       )
     }
   }
