@@ -1,6 +1,6 @@
 {
   "name": "@vue-macros/nuxt",
-  "version": "1.13.1",
+  "version": "1.13.2",
   "packageManager": "pnpm@10.2.0",
   "description": "nuxt feature from Vue Macros.",
   "type": "module",
